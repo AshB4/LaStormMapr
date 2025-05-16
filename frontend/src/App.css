@@ -1,0 +1,91 @@
+/* 🌪️ LAStormMapr Global Styles – Civic + Responsive */
+
+:root {
+  --primary: #005F73;       /* Deep Teal */
+  --accent: #0A9396;        /* Coastal Cyan */
+  --alert: #E63946;         /* Evacuation Red */
+  --background: #F8F9FA;    /* Light Gray */
+  --text-dark: #001219;     /* Storm Navy */
+  --highlight: #94D2BD;     /* Pale Green */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: var(--background);
+  color: var(--text-dark);
+}
+
+header {
+  background-color: var(--primary);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.container {
+  padding: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.map-wrapper {
+  height: 70vh;
+  width: 100%;
+  border: 2px solid var(--accent);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+footer {
+  background-color: var(--primary);
+  color: white;
+  text-align: center;
+  padding: 0.5rem;
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  font-size: 0.9rem;
+}
+
+.alert-banner {
+  background-color: var(--alert);
+  color: white;
+  padding: 0.75rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.card {
+  background: white;
+  border-radius: 6px;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  margin-bottom: 1rem;
+}
+@media (max-width: 768px) {
+  .container {
+    padding: 0.75rem;
+  }
+
+  .map-wrapper {
+    height: 60vh;
+    border-radius: 0;
+  }
+
+  header,
+  footer,
+  .alert-banner {
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .card {
+    margin-bottom: 1rem;
+    box-shadow: none;
+    border-radius: 0;
+  }
+}

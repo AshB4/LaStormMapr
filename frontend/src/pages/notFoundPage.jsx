@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import PrimaryButton from "../UI/primaryButton";
+import errorimg from "../assets/404Gone.png";
 
 const NotFoundPage = () => {
   const navigate = useNavigate();
@@ -7,7 +8,7 @@ const NotFoundPage = () => {
   return (
     <div className="d-flex flex-column justify-content-center align-items-center text-center vh-100">
       <img
-        src="/assets/404Gone.png"
+        src={errorimg}
         alt="Page not found - blown off the map"
         style={{ maxWidth: "400px", marginBottom: "1.5rem" }}
       />

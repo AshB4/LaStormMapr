@@ -13,7 +13,7 @@ const HomePage = () => {
 
   return (
     <div className="container my-4">
-      <h1 className="text-primary mb-4">Find a Shelter Near You</h1>
+      <h1 className="text-primary mb-4 fw-bold">Find a Shelter Near You</h1>
 
       {/* Map Section */}
       <div className="map-wrapper mb-4">

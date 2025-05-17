@@ -1,20 +1,36 @@
+import React from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import "./Header.css";
+import logo from "../../assets/LaStormState.png";
+import text from "../../assets/LAStormText.png";
 
 const Header = () => (
   <header>
-    <Navbar expand="md" variant="dark" className="bg-primary text-white py-3 shadow-sm">
+    <Navbar expand="md" variant="dark" className="shadow-sm fw-bold text-white">
+
       <Container>
-        <Navbar.Brand as={Link} to="/" className="d-flex align-items-center">
+        <Navbar.Brand as={Link} to="/" className="d-flex align-items-center gap-2">
           <img
-            src="/logo-transparent.png"
-            alt="LAStormMapr Logo"
-            height="40"
-            className="me-2"
-            style={{ position: "relative", left: "-6px" }}
-          />
-          <span className="fw-bold">LAStormMapr</span>
+  src={logo}
+  alt="LAStormMapr Icon"
+  style={{
+    height: "60px",
+    width: "auto",
+    maxWidth: "64px",
+    objectFit: "contain"
+  }}
+/>
+<img
+  src={text}
+  alt="LAStormMapr Text"
+  style={{
+    height: "42px",
+    width: "auto",
+    maxWidth: "140px",
+    objectFit: "contain"
+  }}
+/>
+
         </Navbar.Brand>
 
         <Navbar.Toggle aria-controls="main-nav" />
@@ -25,9 +41,8 @@ const Header = () => (
             <Nav.Link as={Link} to="/tips">Tips</Nav.Link>
             <Nav.Link as={Link} to="/shelter">Shelters</Nav.Link>
             <Nav.Link as={Link} to="/login">Login</Nav.Link>
-            {/* make this a special link only admins can see */}
             <Nav.Link as={Link} to="/dashboard">Dashboard</Nav.Link>
-            <Nav.Link as={Link} to="/admin/login">Admin</Nav.Link>
+  
           </Nav>
         </Navbar.Collapse>
       </Container>

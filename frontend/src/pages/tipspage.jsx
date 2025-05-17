@@ -1,7 +1,7 @@
 const TipsPage = () => {
   return (
     <div className="container my-4">
-      <h1 className="text-primary mb-4">Hurricane Prep Tips</h1>
+      <h1 className="text-primary mb-4 fw-bold">Hurricane Prep Tips</h1>
 
       <ul className="list-group mb-5">
         <li className="list-group-item">💧 Stock up on water — one gallon per person per day</li>
@@ -11,7 +11,7 @@ const TipsPage = () => {
         <li className="list-group-item">🧻 Toilet paper. Enough said.</li>
       </ul>
 
-      <h2 className="text-accent mb-3">FAQs</h2>
+      <h2 className="text-accent mb-3f fw-bold">FAQs</h2>
 
       <div className="accordion" id="faqAccordion">
         <div className="accordion-item">

@@ -26,7 +26,7 @@ const Footer = () => (
         <div className="d-flex justify-content-between align-items-start mb-3">
           {/* Left: Larger Logo */}
           <div>
-            <img src={logo} alt="LAStormMapr Logo" height="100" className="mb-1" />
+            <img src={logo} alt="LAStormMapr Logo" height="90" className="mb-1" />
           </div>
 
           {/* Center: Home + Tips */}

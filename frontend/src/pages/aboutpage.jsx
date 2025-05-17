@@ -7,7 +7,7 @@ const AboutPage = () => {
       <h1 className="text-primary mb-4 fw-bold">About LAStormMapr</h1>
 
       <p>
-        <strong>LAStormMapr</strong> is a free, open-source civic tool designed to help
+        <strong>LAStormMapr</strong> is a civic tool designed to help
         Louisiana residents locate emergency shelters, prepare for hurricanes, and stay
         informed during severe weather events. It combines real-time mapping, responsive
         design, and accessibility-first development — because everyone deserves clear,
@@ -15,13 +15,16 @@ const AboutPage = () => {
       </p>
 
       <h2 className="text-accent mt-5 mb-3 fw-bold">Why I Built This</h2>
-      <p>
-        After experiencing the chaos and confusion of storm season firsthand, I realized
-        how difficult it can be to find trustworthy, centralized information when you
-        need it most. Many public tools are outdated or unfriendly to mobile users. So
-        I decided to build something better — a tool designed for the people who actually
-        need it, including our elders, neighbors, and communities often left behind.
-      </p>
+<p>
+  Louisiana already has strong emergency systems in place—but not all of 
+  them are built with modern tech or mobile-first design in mind. 
+  I wanted to create something that works seamlessly on the go,
+   that’s accessible to more people, and that complements the official 
+   resources with clarity, speed, and ease of use. LAStormMapr is about
+    taking what’s already good and making it even better—especially for
+     everyday folks trying to make quick decisions during chaotic moments.
+</p>
+
 
       <h2 className="text-accent mt-5 mb-3 fw-bold">Tech Stack</h2>
       <ul>

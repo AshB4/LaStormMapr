@@ -6,6 +6,7 @@ import "leaflet/dist/leaflet.css";
 import markerIcon2x from "leaflet/dist/images/marker-icon-2x.png";
 import markerIcon from "leaflet/dist/images/marker-icon.png";
 import markerShadow from "leaflet/dist/images/marker-shadow.png";
+import PrimaryButton from "../UI/primaryButton";
 
 L.Icon.Default.mergeOptions({
   iconRetinaUrl: markerIcon2x,
@@ -80,6 +81,11 @@ useEffect(() => {
           </div>
         ))}
       </div>
+      <div className="d-flex gap-3 justify-content-center mb-4">
+  <button className="btn btn-primary">Find Nearest Shelter</button>
+  <button className="btn btn-outline-secondary">View Evacuation Routes</button>
+</div>
+
     </div>
   );
 };

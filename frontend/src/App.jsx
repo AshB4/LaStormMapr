@@ -41,3 +41,11 @@ const App = () => {
 };
 
 export default App;
+
+// Docs:
+// https://www.xweather.com/docs/weather-api/endpoints/tropicalcyclones
+// https://docs.nationalflooddata.com/dataservice/v3/index.html
+// https://www.weather.gov/documentation/services-web-api
+// https://data.brla.gov/Business-and-Financial/Pet-Preparedness/3t7g-ia4h/about_data
+// https://data.brla.gov/Transportation-and-Infrastructure/Public-Safety-Facility/h667-2xhn/about_data
+// https://getbootstrap.com/docs/5.3/components/modal/#fullscreen-modal

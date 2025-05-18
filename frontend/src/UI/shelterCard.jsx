@@ -16,7 +16,6 @@ const ShelterCard = ({ shelter, index }) => {
     >
       <div className="card-body">
         <h5 className="card-title text-primary fw-bold">{shelter.name}</h5>
-
         <p className="card-text mb-1">
           <strong>Address:</strong> {shelter.address}
         </p>
@@ -30,17 +29,15 @@ const ShelterCard = ({ shelter, index }) => {
             {shelter.phone}
           </a>
         </p>
-
         <p className="card-text text-muted mb-3" style={{ fontSize: "0.95rem" }}>
           {shelter.details}
         </p>
-
         <a
           href={shelter.website}
           target="_blank"
           rel="noopener noreferrer"
           className="btn btn-sm btn-outline-primary d-inline-flex align-items-center"
-          onClick={(e) => e.stopPropagation()} // prevent triggering full card click
+          onClick={(e) => e.stopPropagation()}
         >
           Visit Website <ArrowRight className="ms-2" />
         </a>

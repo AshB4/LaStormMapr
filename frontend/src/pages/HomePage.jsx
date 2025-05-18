@@ -17,8 +17,13 @@ L.Icon.Default.mergeOptions({
 
 const HomePage = () => {
   const [shelters, setShelters] = useState([]);
-
   const [userLocation, setUserLocation] = useState(null);
+
+  const [filterType, setFilterType] = useState("All"); 
+const visibleShelters = filterType === "All"
+  ? shelters
+  : shelters.filter(s => s.type === filterType);
+
 
 useEffect(() => {
   navigator.geolocation.getCurrentPosition(
@@ -37,6 +42,37 @@ useEffect(() => {
       .then(setShelters)
       .catch((err) => console.error("Failed to fetch shelter data:", err));
   }, []);
+
+  useEffect(() => {
+  const fetchPetPreparednessData = async () => {
+    try {
+      const res = await fetch("https://data.brla.gov/resource/3t7g-ia4h.json");
+      const data = await res.json();
+
+      const formatted = data
+        .filter(item => item.the_geom && item.the_geom.coordinates)
+        .map((item, i) => ({
+          id: i,
+          name: item.business_name || "Pet Facility",
+          address: item.full_address,
+          phone: item.phone_number,
+          city: item.city,
+          zip: item.zip,
+          website: item.website,
+          latitude: parseFloat(item.the_geom.coordinates[1]),
+          longitude: parseFloat(item.the_geom.coordinates[0]),
+          type: "Pet Shelter"
+        }));
+
+      setShelters(prev => [...prev, ...formatted]);
+    } catch (err) {
+      console.error("Error fetching pet data:", err);
+    }
+  };
+
+  fetchPetPreparednessData();
+}, []);
+
 
   return (
     <div className="container my-4">
@@ -60,7 +96,7 @@ useEffect(() => {
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           />
 
-          {shelters.map((shelter, index) => (
+          {visibleShelters.map((shelter, index) => (
             <Marker
               key={index}
               position={[parseFloat(shelter.latitude), parseFloat(shelter.longitude)]}
@@ -75,17 +111,17 @@ useEffect(() => {
       </div>
 
       <div className="row">
-        {shelters.map((shelter, index) => (
+        {visibleShelters.map((shelter, index) => (
           <div className="col-md-6 col-lg-4 mb-4" key={index}>
             <ShelterCard shelter={shelter} index={index} />
           </div>
         ))}
       </div>
-      <div className="d-flex gap-3 justify-content-center mb-4">
-  <button className="btn btn-primary">Find Nearest Shelter</button>
-  <button className="btn btn-outline-secondary">View Evacuation Routes</button>
+      <div className="mb-3 d-flex gap-2">
+  <button className={`btn ${filterType === "All" ? "btn-primary" : "btn-outline-primary"}`} onClick={() => setFilterType("All")}>All</button>
+  <button className={`btn ${filterType === "Pet Shelter" ? "btn-primary" : "btn-outline-primary"}`} onClick={() => setFilterType("Pet Shelter")}>Pet Shelters</button>
+  <button className={`btn ${filterType === "General Shelter" ? "btn-primary" : "btn-outline-primary"}`} onClick={() => setFilterType("General Shelter")}>General Shelters</button>
 </div>
-
     </div>
   );
 };

@@ -1,0 +1,221 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -91.1834,
+          30.5252
+        ]
+      },
+      "properties": {
+        "name": "FG Clark Activity Center (Southern University)",
+        "address": "801 Harding Blvd, Baton Rouge, LA 70807",
+        "phone": "(225) 771-3821",
+        "website": "https://www.subr.edu/page/899",
+        "pet_policy": "Service animals are permitted. Assistance animals with approval.",
+        "details": "Serves as a hurricane evacuation center during emergencies."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -91.1842,
+          30.4486
+        ]
+      },
+      "properties": {
+        "name": "New Inspiration - Halfway House for Women",
+        "address": "1272 Laurel St, Baton Rouge, LA 70802",
+        "phone": "(225) 343-3286",
+        "website": "https://www.homelessshelterdirectory.org/shelter/la_new-inspiration-halfway-house-for-women",
+        "pet_policy": "Unknown \u2013 call to confirm.",
+        "details": "Substance abuse treatment and housing for women."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -91.1859,
+          30.4493
+        ]
+      },
+      "properties": {
+        "name": "Joseph Homes, Inc.",
+        "address": "130 South 11th Street, Baton Rouge, LA 70802",
+        "phone": "(225) 336-8770",
+        "website": "https://www.ccdiobr.org/what-we-do/transitional-housing/joseph-homes/",
+        "pet_policy": "Unknown \u2013 call to confirm.",
+        "details": "Transitional housing for ex-offenders."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -91.1455,
+          30.4455
+        ]
+      },
+      "properties": {
+        "name": "Youth Oasis \u2013 Kaleidoscope Youth Shelter",
+        "address": "260 South Acadian Thruway, Baton Rouge, LA 70806",
+        "phone": "(225) 343-6300",
+        "website": "https://www.youthoasis.org/",
+        "pet_policy": "Unknown \u2013 call to confirm.",
+        "details": "Provides emergency shelter for youth aged 10\u201321."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -91.1876,
+          30.4467
+        ]
+      },
+      "properties": {
+        "name": "Maison des Amis",
+        "address": "1050 Convention Street, Baton Rouge, LA 70802",
+        "phone": "(225) 343-3827",
+        "website": "https://www.maisonbr.org/",
+        "pet_policy": "Pets are not allowed at this shelter.",
+        "details": "Transitional housing for adults with mental illness."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -91.1849,
+          30.4481
+        ]
+      },
+      "properties": {
+        "name": "Volunteers of America Drop-In Services",
+        "address": "153 North 17th Street, Baton Rouge, LA 70802",
+        "phone": "(225) 388-5800",
+        "website": "https://www.voascla.org/services/drop-in-outreach-and-referral-services-dors/",
+        "pet_policy": "Unknown \u2013 call to confirm.",
+        "details": "Assists homeless individuals and families, including shelter during disasters."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -91.1885,
+          30.4454
+        ]
+      },
+      "properties": {
+        "name": "Bishop Ott Shelter (St. Vincent de Paul)",
+        "address": "1623 Convention Street, Baton Rouge, LA 70802",
+        "phone": "(225) 383-7837 ext. 223",
+        "website": "https://www.svdpbr.net/our-programs",
+        "pet_policy": "Unknown \u2013 call to confirm.",
+        "details": "Shelters for men, mothers with children, families, and overflow during hurricanes."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -91.1037,
+          30.5067
+        ]
+      },
+      "properties": {
+        "name": "Salvation Army Shelter",
+        "address": "7361 Airline Highway, Baton Rouge, LA 70805",
+        "phone": "(225) 355-4483",
+        "website": "https://southernusa.salvationarmy.org/baton-rouge/",
+        "pet_policy": "Pets are not allowed at this shelter.",
+        "details": "Primarily serves men; emergency shelter during disasters."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -91.1094,
+          30.4918
+        ]
+      },
+      "properties": {
+        "name": "Charles R. Kelly Community Center",
+        "address": "3535 Riley Street, Baton Rouge, LA 70805",
+        "phone": "(225) 389-5464",
+        "website": "https://www.brla.gov/644/Charles-R-Kelly-Community-Center",
+        "pet_policy": "Unknown \u2013 call to confirm.",
+        "details": "Activated as a shelter during extreme weather events."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -91.1864,
+          30.5328
+        ]
+      },
+      "properties": {
+        "name": "Jewel J. Newman Community Center",
+        "address": "2013 Central Road, Baton Rouge, LA 70807",
+        "phone": "(225) 775-3935",
+        "website": "https://www.brla.gov/699/Jewel-J-Newman-Community-Center",
+        "pet_policy": "Unknown \u2013 call to confirm.",
+        "details": "Warming and emergency shelter during severe weather."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -91.1763,
+          30.4476
+        ]
+      },
+      "properties": {
+        "name": "Leo S. Butler Community Center",
+        "address": "950 E Washington Street, Baton Rouge, LA 70802",
+        "phone": "(225) 389-4860",
+        "website": "https://www.brla.gov/736/Dr-Leo-S-Butler-Community-Center",
+        "pet_policy": "Unknown \u2013 call to confirm.",
+        "details": "Provides shelter services during emergencies."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -91.1651,
+          30.4511
+        ]
+      },
+      "properties": {
+        "name": "Harmony Center Family Shelter",
+        "address": "2736 Florida Blvd, Baton Rouge, LA 70802",
+        "phone": "(225) 383-9139",
+        "website": "https://www.harmonycenter.org/",
+        "pet_policy": "Unknown \u2013 call to confirm.",
+        "details": "Shelter for families during disasters."
+      }
+    }
+  ]
+}

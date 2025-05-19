@@ -1,0 +1,27 @@
+### 💡 Architecture Overview
+
+| Route                           | Served By   |
+|--------------------------------|-------------|
+| `/api/shelters`                | .NET Core   |
+| `/api/weather`                 | .NET Core   |
+| `/export/shelters.csv`         | PHP         |
+| `/admin/login.php`             | PHP         |
+| `/admin/dashboard.php`         | PHP         |
+| React fetches → `/api/*`       | .NET Core   |
+| PHP calls → Shared DB or .NET  | If needed   |
+
+---
+
+### 🧠 Strategy
+
+I scoped this project to reflect **real-world civic contract workflows**. The public-facing **map and shelter data** are powered by a modern **.NET Core API**, which can be easily extended using EF Core or real-time data sources.
+
+The **admin panel and CSV export tools** are built using **PHP**, which mirrors how many Louisiana municipal systems still handle internal processes and legacy software. This structure also allows for **gradual modernization** — a pattern commonly seen in full-stack government projects.
+
+---
+
+### 🎯 This architecture mirrors a typical hybrid environment:
+
+- A modern API layer for scalability and integration
+- Lightweight PHP tools for rapid internal use and compatibility
+- A shared data model that can evolve as systems migrate from legacy stacks to .NET-based platforms

@@ -21,8 +21,9 @@ git clone https://github.com/AshB4/LaStormMapr.git
 cd LaStormMapr
 npm install
 npm start
-The app will run locally at http://localhost:3000
 ```
+The app will run locally at http://localhost:3000
+
 
 📌 Project Status
 🔧 Actively being developed

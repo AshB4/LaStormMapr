@@ -13,7 +13,9 @@ LAStormMapr is a React-based web app designed to provide critical storm preparat
 ## 🧰 Tech Stack
 - **Frontend:** React.js, Leaflet.js, Bootstrap
 - **Data Source:** GeoJSON (custom, local, or open-data)
-- **Hosting:** GitHub Pages (or customizable for Netlify/Vercel)
+
+##Preview Link
+https://www.youtube.com/watch?v=7EOdd2xvej0
 
 ## 🚀 Getting Started
 ```bash
